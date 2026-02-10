@@ -9,5 +9,8 @@ WHAT THIS IS?
     This is a project through the above listed Boot.dev that will be a text file analyzer.
     (Thats about all I know for now)
 
+NEW DAY
+    It has been a while since I worked on this. Back to it and so lets get after it!
+
 HOW TO USE?
     python3 main.py (pretty simple)
