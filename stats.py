@@ -27,4 +27,6 @@ def mail_man(letter_bag):  # because it sorts the letters
         mail_distribution = {'char': char, 'num': count}
         sorted_letters.append(mail_distribution)
 
-    return sorted_letters.sort(key=sort_on, reverse=True)
+    sorted_letters.sort(key=sort_on, reverse=True)
+
+    return sorted_letters
