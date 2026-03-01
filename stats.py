@@ -12,3 +12,9 @@ def char_counter(whole_book):
         char_tracker[lowered] = char_tracker.get(lowered, 0) + 1
 
     return char_tracker
+
+
+def mail_man(letter_bag):  # because it sorts the letters
+
+    
+
