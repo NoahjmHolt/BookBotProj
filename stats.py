@@ -16,5 +16,4 @@ def char_counter(whole_book):
 
 def mail_man(letter_bag):  # because it sorts the letters
 
-    
-
+    sorted_letters = letter_bag.sort(key='num', reverse=True)

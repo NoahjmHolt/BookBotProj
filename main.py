@@ -12,8 +12,9 @@ def main():
     pages = get_book_text('./books/frankenstein.txt')
     count_words = seperate_leafs(pages)
     each_letter = char_counter(pages)
+    sorted_letters = mail_man(each_letter)
 
     print(f'Found {count_words} total words')
-    print(each_letter)
+    print(sorted_letters)
 
 main()
