@@ -1,5 +1,5 @@
 from stats import *
-
+import sys
 
 def get_book_text(filepath):
 
@@ -23,7 +23,11 @@ def status_report(file_name, word_count, letter_count):
 
 def main():
 
-    book_space = './books/frankenstein.txt'
+    if len(sys.argv) != 2:
+        print('Usage: python3 main.py <path_to_book>')
+        sys.exit(1)
+
+    book_space = sys.argv[1]
     pages = get_book_text(book_space)
     count_words = seperate_leafs(pages)
     each_letter = char_counter(pages)
