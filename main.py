@@ -13,7 +13,7 @@ def status_report(file_name, word_count, letter_count):
     print('============ BOOKBOT ============')
     print(f'Analyzing book found at {file_name}...')
     print('----------- Word Count ----------')
-    print()
+    print(f'Found {word_count} total words')
     print('----------- Character Count ----------')
     for dict in letter_count:
         print(f'{dict["char"]}: {dict["num"]}')
