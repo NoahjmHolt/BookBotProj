@@ -14,7 +14,17 @@ def char_counter(whole_book):
     return char_tracker
 
 
+def sort_on(item):
+
+    return item['num']
+
+
 def mail_man(letter_bag):  # because it sorts the letters
 
-    sorted_letters = list(letter_bag).sort(key='num', reverse=True)
-    return sorted_letters
+    sorted_letters = []
+
+    for char, count in letter_bag.items():
+        mail_distribution = {'char': char, 'num': count}
+        sorted_letters.append(mail_distribution)
+
+    return sorted_letters.sort(key=sort_on, reverse=True)
