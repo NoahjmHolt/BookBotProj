@@ -9,7 +9,7 @@ def char_counter(whole_book):
 
     for char in whole_book:
         lowered = char.lower()
-        if lowered != ' ':
+        if lowered.isalpha():
             char_tracker[lowered] = char_tracker.get(lowered, 0) + 1
 
     return char_tracker
